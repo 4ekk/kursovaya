@@ -1,0 +1,331 @@
+body {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    background-color: #efefef	;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #efefef;
+    padding: 2px 0;
+}
+
+.header_text {
+    margin-right: 15vh;
+}
+
+.container_header {
+    max-width: 210vh;
+    margin: 0 auto;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+.logo img:hover {
+    transform: scale(0.9);
+}
+
+.logo img {
+    max-width: 8vh;
+    margin-top: 3vh;
+    margin-left: 2vh;
+    transform: scale(0.8);
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav ul li a:hover {
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    padding: 20px 0;
+}
+
+.image-container {
+    width: 98%;
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 88vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+
+.image {
+    width: 210vh;
+    margin: 0 auto;
+    min-height: 10vh;
+    border-radius: 20px;
+    border: 2px solid #efefef(255, 255, 255);
+}
+
+.header_text {
+    color: black;
+    margin-top: 40px;
+    gap: 100px;
+}
+
+.button {
+    margin-top: 15vh;
+    margin-left: 8vh;
+    font-size: 10vh;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.header_text li {
+    list-style-type: none;
+}
+
+.logo {
+    display: block;
+}
+
+.button:hover {
+    color: rgb(143, 140, 140);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.image-container h1 {
+    color: rgb(255, 255, 255);
+}
+
+.image_text {
+    font-size: 12vh;
+    color: white;
+    margin-left: 5vh;
+    margin-top: 7vh;
+    mix-blend-mode: difference;
+}
+
+.button_book button {
+    background-color: white;
+    max-width: 230000vh;
+    margin-left: 10vh;
+    margin-top: 12vh;
+    border-radius: 1vh;
+    border: none;
+    padding: 2vh 5vh;
+    cursor: pointer;
+    font-size: 2.5vh;
+    color: black;
+}
+
+.button_book button:hover {
+    transform: scale(1.1);
+    background-color: grey;
+}
+
+.list {
+    margin-top: 3vh;
+}
+
+.list:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.mini-window {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: right 0.3s ease;
+    z-index: 9999;
+    margin-top: 8vh;
+}
+
+.show {
+    right: 0;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #666b70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #b1b8c0;
+}
+
+.info-box {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.contact-box {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 80vh;
+    margin-top: 10vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40vh;
+    align-items: center;
+}
+
+.rights {
+    font-size: 50%;
+    color: grey;
+    max-width: 50%;
+    text-align: center;
+    align-items: center;
+    margin-left: 10vh;
+}
+
+.booking-window {
+    display: none;
+    position: fixed;
+    top: 50vh; 
+    left: 50vw; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5vh; 
+    border-radius: 5vh; 
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation-name: slideInFromBottom;
+    animation-duration: 0.5s;
+}
+
+.booking-content {
+    text-align: center;
+}
+
+.booking-form {
+    margin-top: 5vh; 
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 2.5vh;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 2vh; 
+    margin-bottom: 5vh; 
+    border: 0.25vh solid #ccc; 
+    border-radius: 2vh; 
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 2.5vh;
+    background-color: #666b70;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #b1b8c0;
+}
+
+.cancel-btn {
+    margin-left: 21vh;
+    margin-top: 2vh;
+    border: none;
+    background-color: rgb(41, 36, 36);
+    color: white;
+    border-radius: 1vh;
+    cursor: pointer;
+    padding: 0.9vh;
+    width: 30%;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(68, 44, 44);
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translate(-50%, 100%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .container_header {
+        max-width: 100%;
+    }
+    .image_text {
+        font-size: 6vh;
+    }
+
+    .booking-window {
+         width: 30vh;
+         height: 85vh;
+    }
+
+    .button {
+        margin-bottom: 100vh;
+    }
+
+    header {
+        width: 1vh;
+    }
+}

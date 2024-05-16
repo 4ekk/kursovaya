@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>KazWayfarer - contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icons8-казахстан-96.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <div class="mini-window">
+                <form class="login-form">
+                    <label for="username">Логин:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+            <div class="header_top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/icons8-travel-64.png" alt="">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header_text">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контактная информация</a></li>
+                        <li><a href="tickets.html">Билеты</a></li>
+                    </ul>
+                </nav>
+                <div class="list"><img src="img/icons8-список-64.png" alt=""></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact-box">
+        <p class="contact_text">
+            E-mail: qwerty@gmail.com<br><br>
+            Phone number: +7 777 777 1488<br><br>
+            Adress: Достык 108<br><br>
+            Сайт был написан студентом ВТ2А Сейдакбаровом Алиханом<br><br>
+            <div class="rights">All rights reserved. No part of this publication may be reproduced, distributed, or bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
+        </p>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var listElement = document.querySelector('.list');
+            var miniWindow = document.querySelector('.mini-window');
+
+            listElement.addEventListener('click', function() {
+                miniWindow.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

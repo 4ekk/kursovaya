@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>KazWayfarer - about us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icons8-казахстан-96.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <div class="mini-window">
+                <form class="login-form">
+                    <label for="username">Логин:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+            <div class="header_top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/icons8-travel-64.png" alt="">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header_text">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контактная информация</a></li>
+                        <li><a href="tickets.html">Билеты</a></li>
+                    </ul>
+                </nav>
+                <div class="list"><img src="img/icons8-список-64.png" alt=""></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="info-box">
+        <p>
+            Мы - команда энтузиастов, заложивших основы туристической компании с целью познакомить мир с богатством и красотой Казахстана. Наша миссия - предоставить уникальные и незабываемые путешествия, раскрывающие все богатства этой прекрасной страны.
+            В сердце Центральной Азии, Казахстан славится своим разнообразием природных ландшафтов - от могучих горных вершин до бескрайних степей, от удивительных пустынь до живописных озер. Наша компания стремится показать вам каждый уголок этой удивительной страны через наши экскурсии, организованные с любовью и профессионализмом.
+            Наша команда состоит из опытных гидов и организаторов путешествий, готовых помочь вам в каждом шаге вашего приключения. Мы разработали разнообразные маршруты, чтобы удовлетворить вкусы каждого путешественника, будь то любитель активного отдыха, почитатель культурных достопримечательностей или просто искатель приключений.
+            Мы гордимся тем, что мы можем предложить незабываемые впечатления, обогащающие знаниями и вдохновляющие на новые открытия. Присоединяйтесь к нам и откройте для себя Казахстанские просторы!
+        </p>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var listElement = document.querySelector('.list');
+            var miniWindow = document.querySelector('.mini-window');
+
+            listElement.addEventListener('click', function() {
+                miniWindow.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
